@@ -1,5 +1,5 @@
 PKG_NAME := eog
-URL := http://ftp.gnome.org/pub/gnome/sources/eog/3.20/eog-3.20.5.tar.xz
-ARCHIVES :=
+URL := https://download.gnome.org/sources/eog/3.24/eog-3.24.0.tar.xz
+
 
 include ../common/Makefile.common
