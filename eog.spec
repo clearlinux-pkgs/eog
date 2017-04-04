@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.24.0
-Release  : 4
+Release  : 5
 URL      : https://download.gnome.org/sources/eog/3.24/eog-3.24.0.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.24/eog-3.24.0.tar.xz
 Summary  : The GNOME Image Viewer
@@ -100,7 +100,7 @@ locales components for the eog package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1490621823
+export SOURCE_DATE_EPOCH=1491314452
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -112,7 +112,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1490621823
+export SOURCE_DATE_EPOCH=1491314452
 rm -rf %{buildroot}
 %make_install
 %find_lang eog
