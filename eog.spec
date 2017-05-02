@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.24.1
-Release  : 6
+Release  : 7
 URL      : https://download.gnome.org/sources/eog/3.24/eog-3.24.1.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.24/eog-3.24.1.tar.xz
 Summary  : The GNOME Image Viewer
