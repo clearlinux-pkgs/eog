@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.24.1
-Release  : 7
+Release  : 8
 URL      : https://download.gnome.org/sources/eog/3.24/eog-3.24.1.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.24/eog-3.24.1.tar.xz
 Summary  : The GNOME Image Viewer
@@ -98,8 +98,11 @@ locales components for the eog package.
 %setup -q -n eog-3.24.1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1491871789
+export SOURCE_DATE_EPOCH=1500837177
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -107,11 +110,11 @@ make V=1  %{?_smp_mflags}
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1491871789
+export SOURCE_DATE_EPOCH=1500837177
 rm -rf %{buildroot}
 %make_install
 %find_lang eog
@@ -146,6 +149,91 @@ rm -rf %{buildroot}
 /usr/share/eog/icons/hicolor/scalable/actions/slideshow-play.svg
 /usr/share/glib-2.0/schemas/org.gnome.eog.enums.xml
 /usr/share/glib-2.0/schemas/org.gnome.eog.gschema.xml
+/usr/share/icons/hicolor/16x16/apps/eog.png
+/usr/share/icons/hicolor/22x22/apps/eog.png
+/usr/share/icons/hicolor/24x24/apps/eog.png
+/usr/share/icons/hicolor/256x256/apps/eog.png
+/usr/share/icons/hicolor/32x32/apps/eog.png
+/usr/share/icons/hicolor/scalable/apps/eog-symbolic.svg
+
+%files dev
+%defattr(-,root,root,-)
+/usr/include/eog-3.0/eog/eog-application-activatable.h
+/usr/include/eog-3.0/eog/eog-application.h
+/usr/include/eog-3.0/eog/eog-clipboard-handler.h
+/usr/include/eog-3.0/eog/eog-debug.h
+/usr/include/eog-3.0/eog/eog-enums.h
+/usr/include/eog-3.0/eog/eog-exif-util.h
+/usr/include/eog-3.0/eog/eog-file-chooser.h
+/usr/include/eog-3.0/eog/eog-image-save-info.h
+/usr/include/eog-3.0/eog/eog-image.h
+/usr/include/eog-3.0/eog/eog-job-scheduler.h
+/usr/include/eog-3.0/eog/eog-jobs.h
+/usr/include/eog-3.0/eog/eog-list-store.h
+/usr/include/eog-3.0/eog/eog-properties-dialog.h
+/usr/include/eog-3.0/eog/eog-scroll-view.h
+/usr/include/eog-3.0/eog/eog-sidebar.h
+/usr/include/eog-3.0/eog/eog-statusbar.h
+/usr/include/eog-3.0/eog/eog-thumb-nav.h
+/usr/include/eog-3.0/eog/eog-thumb-view.h
+/usr/include/eog-3.0/eog/eog-thumbnail.h
+/usr/include/eog-3.0/eog/eog-transform.h
+/usr/include/eog-3.0/eog/eog-uri-converter.h
+/usr/include/eog-3.0/eog/eog-window-activatable.h
+/usr/include/eog-3.0/eog/eog-window.h
+/usr/lib64/pkgconfig/eog.pc
+
+%files doc
+%defattr(-,root,root,-)
+/usr/share/gtk-doc/html/eog/EogClipboardHandler.html
+/usr/share/gtk-doc/html/eog/EogFileChooser.html
+/usr/share/gtk-doc/html/eog/EogImageSaveInfo.html
+/usr/share/gtk-doc/html/eog/EogScrollView.html
+/usr/share/gtk-doc/html/eog/EogSidebar.html
+/usr/share/gtk-doc/html/eog/EogStatusbar.html
+/usr/share/gtk-doc/html/eog/EogWindowActivatable.html
+/usr/share/gtk-doc/html/eog/annotation-glossary.html
+/usr/share/gtk-doc/html/eog/api-index.html
+/usr/share/gtk-doc/html/eog/ch01.html
+/usr/share/gtk-doc/html/eog/ch02.html
+/usr/share/gtk-doc/html/eog/ch03.html
+/usr/share/gtk-doc/html/eog/ch04.html
+/usr/share/gtk-doc/html/eog/ch05.html
+/usr/share/gtk-doc/html/eog/ch06.html
+/usr/share/gtk-doc/html/eog/eog-EogJobScheduler.html
+/usr/share/gtk-doc/html/eog/eog-eog-application.html
+/usr/share/gtk-doc/html/eog/eog-eog-config-keys.html
+/usr/share/gtk-doc/html/eog/eog-eog-debug.html
+/usr/share/gtk-doc/html/eog/eog-eog-error-message-area.html
+/usr/share/gtk-doc/html/eog/eog-eog-exif-util.html
+/usr/share/gtk-doc/html/eog/eog-eog-image.html
+/usr/share/gtk-doc/html/eog/eog-eog-jobs.html
+/usr/share/gtk-doc/html/eog/eog-eog-list-store.html
+/usr/share/gtk-doc/html/eog/eog-eog-pixbuf-util.html
+/usr/share/gtk-doc/html/eog/eog-eog-print.html
+/usr/share/gtk-doc/html/eog/eog-eog-properties-dialog.html
+/usr/share/gtk-doc/html/eog/eog-eog-save-as-dialog-helper.html
+/usr/share/gtk-doc/html/eog/eog-eog-session.html
+/usr/share/gtk-doc/html/eog/eog-eog-thumb-nav.html
+/usr/share/gtk-doc/html/eog/eog-eog-thumb-view.html
+/usr/share/gtk-doc/html/eog/eog-eog-thumbnail.html
+/usr/share/gtk-doc/html/eog/eog-eog-transform.html
+/usr/share/gtk-doc/html/eog/eog-eog-uri-converter.html
+/usr/share/gtk-doc/html/eog/eog-eog-util.html
+/usr/share/gtk-doc/html/eog/eog-eog-window.html
+/usr/share/gtk-doc/html/eog/eog-zoom.html
+/usr/share/gtk-doc/html/eog/eog.devhelp2
+/usr/share/gtk-doc/html/eog/home.png
+/usr/share/gtk-doc/html/eog/index.html
+/usr/share/gtk-doc/html/eog/left-insensitive.png
+/usr/share/gtk-doc/html/eog/left.png
+/usr/share/gtk-doc/html/eog/pt01.html
+/usr/share/gtk-doc/html/eog/right-insensitive.png
+/usr/share/gtk-doc/html/eog/right.png
+/usr/share/gtk-doc/html/eog/rn01.html
+/usr/share/gtk-doc/html/eog/style.css
+/usr/share/gtk-doc/html/eog/up-insensitive.png
+/usr/share/gtk-doc/html/eog/up.png
 /usr/share/help/C/eog/bug-filing.page
 /usr/share/help/C/eog/commandline.page
 /usr/share/help/C/eog/copy-paste.page
@@ -1556,91 +1644,6 @@ rm -rf %{buildroot}
 /usr/share/help/zh_TW/eog/translate.page
 /usr/share/help/zh_TW/eog/view.page
 /usr/share/help/zh_TW/eog/zoom.page
-/usr/share/icons/hicolor/16x16/apps/eog.png
-/usr/share/icons/hicolor/22x22/apps/eog.png
-/usr/share/icons/hicolor/24x24/apps/eog.png
-/usr/share/icons/hicolor/256x256/apps/eog.png
-/usr/share/icons/hicolor/32x32/apps/eog.png
-/usr/share/icons/hicolor/scalable/apps/eog-symbolic.svg
-
-%files dev
-%defattr(-,root,root,-)
-/usr/include/eog-3.0/eog/eog-application-activatable.h
-/usr/include/eog-3.0/eog/eog-application.h
-/usr/include/eog-3.0/eog/eog-clipboard-handler.h
-/usr/include/eog-3.0/eog/eog-debug.h
-/usr/include/eog-3.0/eog/eog-enums.h
-/usr/include/eog-3.0/eog/eog-exif-util.h
-/usr/include/eog-3.0/eog/eog-file-chooser.h
-/usr/include/eog-3.0/eog/eog-image-save-info.h
-/usr/include/eog-3.0/eog/eog-image.h
-/usr/include/eog-3.0/eog/eog-job-scheduler.h
-/usr/include/eog-3.0/eog/eog-jobs.h
-/usr/include/eog-3.0/eog/eog-list-store.h
-/usr/include/eog-3.0/eog/eog-properties-dialog.h
-/usr/include/eog-3.0/eog/eog-scroll-view.h
-/usr/include/eog-3.0/eog/eog-sidebar.h
-/usr/include/eog-3.0/eog/eog-statusbar.h
-/usr/include/eog-3.0/eog/eog-thumb-nav.h
-/usr/include/eog-3.0/eog/eog-thumb-view.h
-/usr/include/eog-3.0/eog/eog-thumbnail.h
-/usr/include/eog-3.0/eog/eog-transform.h
-/usr/include/eog-3.0/eog/eog-uri-converter.h
-/usr/include/eog-3.0/eog/eog-window-activatable.h
-/usr/include/eog-3.0/eog/eog-window.h
-/usr/lib64/pkgconfig/eog.pc
-
-%files doc
-%defattr(-,root,root,-)
-/usr/share/gtk-doc/html/eog/EogClipboardHandler.html
-/usr/share/gtk-doc/html/eog/EogFileChooser.html
-/usr/share/gtk-doc/html/eog/EogImageSaveInfo.html
-/usr/share/gtk-doc/html/eog/EogScrollView.html
-/usr/share/gtk-doc/html/eog/EogSidebar.html
-/usr/share/gtk-doc/html/eog/EogStatusbar.html
-/usr/share/gtk-doc/html/eog/EogWindowActivatable.html
-/usr/share/gtk-doc/html/eog/annotation-glossary.html
-/usr/share/gtk-doc/html/eog/api-index.html
-/usr/share/gtk-doc/html/eog/ch01.html
-/usr/share/gtk-doc/html/eog/ch02.html
-/usr/share/gtk-doc/html/eog/ch03.html
-/usr/share/gtk-doc/html/eog/ch04.html
-/usr/share/gtk-doc/html/eog/ch05.html
-/usr/share/gtk-doc/html/eog/ch06.html
-/usr/share/gtk-doc/html/eog/eog-EogJobScheduler.html
-/usr/share/gtk-doc/html/eog/eog-eog-application.html
-/usr/share/gtk-doc/html/eog/eog-eog-config-keys.html
-/usr/share/gtk-doc/html/eog/eog-eog-debug.html
-/usr/share/gtk-doc/html/eog/eog-eog-error-message-area.html
-/usr/share/gtk-doc/html/eog/eog-eog-exif-util.html
-/usr/share/gtk-doc/html/eog/eog-eog-image.html
-/usr/share/gtk-doc/html/eog/eog-eog-jobs.html
-/usr/share/gtk-doc/html/eog/eog-eog-list-store.html
-/usr/share/gtk-doc/html/eog/eog-eog-pixbuf-util.html
-/usr/share/gtk-doc/html/eog/eog-eog-print.html
-/usr/share/gtk-doc/html/eog/eog-eog-properties-dialog.html
-/usr/share/gtk-doc/html/eog/eog-eog-save-as-dialog-helper.html
-/usr/share/gtk-doc/html/eog/eog-eog-session.html
-/usr/share/gtk-doc/html/eog/eog-eog-thumb-nav.html
-/usr/share/gtk-doc/html/eog/eog-eog-thumb-view.html
-/usr/share/gtk-doc/html/eog/eog-eog-thumbnail.html
-/usr/share/gtk-doc/html/eog/eog-eog-transform.html
-/usr/share/gtk-doc/html/eog/eog-eog-uri-converter.html
-/usr/share/gtk-doc/html/eog/eog-eog-util.html
-/usr/share/gtk-doc/html/eog/eog-eog-window.html
-/usr/share/gtk-doc/html/eog/eog-zoom.html
-/usr/share/gtk-doc/html/eog/eog.devhelp2
-/usr/share/gtk-doc/html/eog/home.png
-/usr/share/gtk-doc/html/eog/index.html
-/usr/share/gtk-doc/html/eog/left-insensitive.png
-/usr/share/gtk-doc/html/eog/left.png
-/usr/share/gtk-doc/html/eog/pt01.html
-/usr/share/gtk-doc/html/eog/right-insensitive.png
-/usr/share/gtk-doc/html/eog/right.png
-/usr/share/gtk-doc/html/eog/rn01.html
-/usr/share/gtk-doc/html/eog/style.css
-/usr/share/gtk-doc/html/eog/up-insensitive.png
-/usr/share/gtk-doc/html/eog/up.png
 
 %files lib
 %defattr(-,root,root,-)
