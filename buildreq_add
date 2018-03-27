@@ -4,3 +4,4 @@ itstool
 libxml2-dev
 libjpeg-turbo-dev
 gobject-introspection-dev
+libexif-dev

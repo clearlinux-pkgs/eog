@@ -1,3 +1,84 @@
+Version 3.28.0
+--------------
+
+New and updated translations:
+
+- Bruce Cowan [en_GB]
+- gogo [hr]
+- A S Alam [pa]
+
+New and updated manual translations
+
+- Marek Černocký [cs]
+- Charles Monzat, Alexandre Franke [fr]
+- Balázs Úr [hu]
+- Piotr Drąg [pl]
+- Anders Jonsson [sv]
+
+Version 3.27.91
+---------------
+
+ * Build system improvements (Iñigo Martínez, Piotr Drąg, Felix Riemann)
+
+Bug fixes:
+ #793719, Various meson related improvements (Iñigo Martínez)
+
+New and updated translations:
+
+- Mario Blättermann [de]
+- GunChleoc [gd]
+
+New and updated manual translations
+
+- Marek Černocký [cs]
+- Mario Blättermann [de]
+- Daniel Mustieles [es]
+- Balázs Úr [hu]
+
+Version 3.27.90
+---------------
+
+ * Swapped shortcuts for gallery and sidebar to match other GNOME apps
+ * Disabled color profile generation from Exif values
+ * Replaced several deprecated Glib/Gtk+ function calls
+
+Bug fixes:
+ #792682, F9 to toggle Side Pane (Felix Riemann)
+ #792770, JPEG image renders black on-screen (Felix Riemann)
+ #792923, Port from gtk_show_uri to gtk_show_uri_on_window (Timm Bäder)
+ #792924, Fix warnings from recent glib changes to g_object_(un)ref (Timm Bäder)
+ #792925, Remove gdk_window_process_updates call (Timm Bäder)
+
+New and updated manual translations
+
+- Piotr Drąg [pl]
+
+Version 3.27.3
+--------------
+
+ * Drop Autotools support in favour of Meson (Iñigo Martínez)
+ * Drop deprecated/unused files from help docs (Felix Riemann)
+
+Bug fixes:
+ #784354, Port to meson build system (Iñigo Martínez)
+
+Version 3.27.2
+--------------
+
+Bug fixes:
+ #787188, Close confirmation dialog looks outdated
+ #787750, EOG 3.26 does not store recently used files
+
+Version 3.27.1
+--------------
+
+ * Port to meson build system (Iñigo Martínez)
+
+Bug fixes:
+ #784354, Port to meson build system (Iñigo Martínez)
+ #790078, build: Install appstream metadata to non-deprecated location
+          (Jeremy Bicha)
+
 Version 3.26.2
 --------------
 
