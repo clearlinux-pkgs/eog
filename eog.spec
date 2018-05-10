@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.28.2
-Release  : 20
+Release  : 21
 URL      : https://download.gnome.org/sources/eog/3.28/eog-3.28.2.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.28/eog-3.28.2.tar.xz
 Summary  : The GNOME Image Viewer
