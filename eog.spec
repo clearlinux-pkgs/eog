@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.28.3
-Release  : 23
+Release  : 24
 URL      : https://download.gnome.org/sources/eog/3.28/eog-3.28.3.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.28/eog-3.28.3.tar.xz
 Summary  : The GNOME Image Viewer
