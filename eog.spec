@@ -4,10 +4,10 @@
 #
 Name     : eog
 Version  : 3.32.1
-Release  : 28
+Release  : 29
 URL      : https://download.gnome.org/sources/eog/3.32/eog-3.32.1.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.32/eog-3.32.1.tar.xz
-Summary  : Eye of Gnome: An image viewing and cataloging program
+Summary  : The GNOME Image Viewer
 Group    : Development/Tools
 License  : CC-BY-SA-3.0 GPL-2.0
 Requires: eog-bin = %{version}-%{release}
@@ -110,7 +110,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556996083
+export SOURCE_DATE_EPOCH=1558463073
+export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
