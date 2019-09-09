@@ -1,37 +1,99 @@
-Version 3.32.2
+Version 3.34.0
 --------------
+
+New and updated translations:
+
+- Danial Behzadi [fa]
+- Ryuta Fujii [ja]
+- Rūdolfs Mazurs [lv]
+- Piotr Drąg [pl]
+
+New and updated manual translations
+
+- Ask Hjorth Larsen [da]
+- Daniel Mustieles [es]
+- Gabor Kelemen [hu]
+- Piotr Drąg [pl]
+- Sebastian Rasmussen [sv]
+
+Version 3.33.91
+---------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Tim Sabsch [de]
+- Claude Paroz [fr]
+- Aurimas Černius [lt]
+- Pawan Chitrakar [ne]
+
+New and updated manual translations
+
+- Pawan Chitrakar [ne]
+
+Version 3.33.90
+---------------
+
+New and updated translations:
+
+- Asier Sarasua Garmendia [eu]
+- Jor Teron [mjw]
+- Anders Jonsson [sv]
+
+Version 3.33.3
+--------------
+
+Bug fixes
+
+ !21, Improve meson port (Iñigo Martínez)
+ !22, build: Use #ifdef consistently (Iñigo Martínez)
+
+New and updated translations:
+
+- Goran Vidović [hr]
+- Sveinn í Felli [is]
+- Nathan Follens [nl]
+
+Version 3.33.2
+--------------
+
+Bug fixes
+
+ #61, Unreasonable limitation of scaling in print dialog (Felix Riemann)
+
+New and updated translations:
+
+- Efstathios Iosifidis [el]
+- Balázs Úr [hu]
+
+New and updated manual translations
+
+- Aleix Badia i Bosch [ca]
+
+Version 3.33.1
+--------------
+
+ * Various help doc improvements (Andre Klapper)
 
 Bug fixes:
 
+ !20, Update librsvg and error checking (Federico Mena Quintero)
+ #50, SIGSEGV in g_mutex_lock() (Felix Riemann)
  #51, PNG file displayed darker after conversion from JPEG file (F. Riemann)
+ #54, Fullscreen has 3 buttons with exactly the same tooltip (Felix Riemann)
  #725359, only build and attach RGB color profiles to PNGs when both
           gAMA and cHRM are present (pdknsk)
 
 New and updated translations:
 
-- Dingzhong Chen [zh_CN]
-
-New and updated manual translations
-
-- Marek Černocký [cs]
-- Christian Kirbach [de]
-
-Version 3.32.1
---------------
-
- * Even more updated help docs (Andre Klapper)
-
-Bug fixes:
-
- #50, SIGSEGV in g_mutex_lock() (Felix Riemann)
-
-New and updated translations:
-
 - Khaled Hosny [ar]
+- Jordi Mas [ca]
 - Alan Mortensen [da]
 - Charles Monzat [fr]
-- Goran Vidović [hr]
+- gogo [hr]
+- Kukuh Syafaat [id]
 - Dušan Kazik [sk]
+- Dingzhong Chen [zh_CN]
 
 New and updated manual translations
 
