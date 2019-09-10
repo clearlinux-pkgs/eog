@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 3.34.0
-Release  : 33
+Release  : 34
 URL      : https://download.gnome.org/sources/eog/3.34/eog-3.34.0.tar.xz
 Source0  : https://download.gnome.org/sources/eog/3.34/eog-3.34.0.tar.xz
 Summary  : Eye of Gnome: An image viewing and cataloging program
