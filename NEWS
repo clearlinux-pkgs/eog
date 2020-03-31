@@ -1,14 +1,131 @@
-Version 3.34.2
+Version 3.36.1
+--------------
+
+New and updated translations:
+
+- Jwtiyar Nariman [ckb]
+- Tim Sabsch [de]
+- Kjartan Maraas [nb]
+- Daniel Șerbănescu [ro]
+
+New and updated manual translations
+
+- Jordi Mas, Francesc Bassas i Bullich, Jaume Jorba,
+  Jordi Sagues, Assumpta [ca]
+- Charles Monzat [fr]
+- Andika Triwidada [id]
+
+Version 3.36.0
+--------------
+
+ * Corrected link to bug writing guide in help docs (Andre Klapper)
+
+Bug fixes:
+
+ !46, [BUG] Fix missing removable storage support in snap package (mindmatter)
+
+New and updated translations:
+
+- Andre Klapper [az]
+- Andre Klapper [br]
+- Gianvito Cavasoli [it]
+- Jeeyong Um [ko]
+- Nathan Follens [nl]
+- Yuri Chornoivan [uk]
+
+New and updated manual translations
+
+- Marek Černocký [cs]
+- Daniel Mustieles [es]
+- Piotr Drąg [pl]
+- Anders Jonsson [sv]
+
+Version 3.35.92
+---------------
+
+New and updated translations:
+
+- Jordi Mas [ca]
+- Alan Mortensen [da]
+- Jor Teron [mjw]
+- Piotr Drąg [pl]
+- pan93412, Chao-Hsiung Liao [zh_TW]
+
+Version 3.35.91
+---------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Bruce Cowan [en_GB]
+- Asier Sarasua Garmendia [eu]
+- Danial Behzadi [fa]
+- Jiri Grönroos [fi]
+- Charles Monzat [fr]
+- Fran Diéguez [gl]
+- gogo [hr]
+- Balázs Úr [hu]
+- Kukuh Syafaat [id]
+- sicklylife [ja]
+- Aurimas Černius [lt]
+- Rafael Fontenelle [pt_BR]
+- Марко М. Костић [sr]
+- Sabri Ünal [tr]
+
+Version 3.35.3
 --------------
 
 Bug fixes:
 
- #93, Pan gesture in RTL shows always next picture (Felix Riemann)
+ !36, EogPrintImageSetup: Rework spinbutton behaviour (Peter C. S. Scholtens)
+ !38, Improve Keyboard Shortcuts (Sabri Ünal)
+ !39, EogScrollView: Guard against attempting to create a surface using
+      an invalid size (Michael Webster)
+ !40, Remove outdated info from HACKING (Anton Leontiev)
+ !41, App icon: minor updates for 3.36 (Tobias Bernard)
+ !45, help: Add Danish screenshots (scootergrisen)
 
 New and updated translations:
 
+- Daniel Mustieles [es]
 - abuyop [ms]
+- Dušan Kazik [sk]
+- Anders Jonsson [sv]
+
+New and updated manual translations
+
+- scootergrisen [da]
+- Andika Triwidada [id]
+
+Version 3.35.2
+--------------
+
+Bug fixes:
+
+ !27, Various EogThumbView bugfixes (Krifa75)
+ #66, Unfullscreen using F11 doesn't work if window is empty (Felix Riemann)
+ #93, Pan gesture in RTL shows always next picture (Felix Riemann)
+ #96, Publish nightly builds on nightly.gnome.org (Felix Riemann, Piotr Drąg)
+
+New and updated translations:
+
+- Jordi Mas [ca]
+- Fran Diéguez [gl]
 - Stas Solovey [ru]
+
+New and updated manual translations
+
+- Aleix Badia i Bosch [ca]
+- Fran Diéguez [gl]
+
+Version 3.35.1
+--------------
+
+Bug fixes:
+
+ !26, Use librsvg's GInputStream functions (Federico Mena Quintero)
+ !27, Various EogThumbView bugfixes (Krifa75)
+ #81, Zoom with mouse wheel is really slow (Felix Riemann)
 
 Version 3.34.1
 --------------
