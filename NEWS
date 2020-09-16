@@ -1,19 +1,132 @@
-Version 3.36.3
+Version 3.38.0
 --------------
-
-Bug fixes:
- !61, EogThumbView: Fix visible range callback being queued to often
-  *   EogJobs: Ensure thumbnail job emits finished signal even if failed
 
 New and updated translations:
 
+- Alan Mortensen, Ask Hjorth Larsen [da]
+- Efstathios Iosifidis [el]
+- Meskó Balázs [hu]
+- Gianvito Cavasoli [it]
+- Jeeyong Um [ko]
+- Rūdolfs Mazurs [lv]
+- José Vieira, Juliano Camargo [pt]
+- Emin Tufan Çetin [tr]
+
+New and updated manual translations
+
+- Miquel-Àngel Burgos i Fradeja [ca]
+
+Version 3.37.92
+---------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Zander Brown [en_GB]
+- Asier Sarasua Garmendia [eu]
+- Danial Behzadi [fa]
+- Jiri Grönroos [fi]
+- Thibault Martin [fr]
+- Fran Dieguez [gl]
+- Goran Vidović [hr]
+- sicklylife [ja]
+- Nathan Follens [nl]
+- Piotr Drąg [pl]
+- Rafael Fontenelle [pt_BR]
+- Dušan Kazik [sk]
+- Matej Urbančič [sl]
+- Марко М. Костић [sr]
+
+New and updated manual translations
+
+- Jordi Mas [ca]
+- Marek Černocký [cs]
+- Mario Blättermann [de]
+- Bruce Cowan, Zander Brown [en_GB]
+- Daniel Mustieles [es]
+- Piotr Drąg [pl]
+
+Version 3.37.90
+---------------
+
+Bug fixes:
+
+ !66, build: Make libportal dependency optional (Felipe Borges)
+ !68, help: change file to File (Monika Grabovska)
+ !69, eog-window: Use view-restore symbolic icon (Diego Escalante Urrelo)
+ !70, flatpak fixups (Jordan Petridis)
+ !71, Make pressing Ctrl+Q close all windows (Martin van Zijl)
+ #99, Use Wallpaper Portal for "Set as Wallpaper" when possible (Felipe Borges)
+ #139, Should inhibit screensaver only in slideshow mode (Felix Riemann)
+
+New and updated translations:
+
+- Felix Riemann [de]
+- Daniel Mustieles [es]
+- Fabio Tomat [fur]
+- Kukuh Syafaat [id]
+- Baurzhan Muftakhidinov [kk]
+- Aurimas Černius [lt]
+- Anders Jonsson [sv]
+- Emin Tufan Çetin [tr]
+- Boyuan Yang [zh_CN]
+
+New and updated manual translations
+
+- Jordi Mas, Assumpta [ca]
+- Anders Jonsson [sv]
+- Yuri Chornoivan [uk]
+
+Version 3.37.2
+--------------
+
+Bug fixes:
+
+ !57, Made strings consistent in format-change.page (Prashant Rawat)
+ !58, Make EoG usable on phones (Arnaud Ferraris)
+ !60, Use Portals and GtkAppChooserDialog for the "Open With" choices
+      (Felipe Borges)
+ !61, EogThumbView: Fix visible range callback being queued to often
+      (Felix Riemann)
+ #113, String with zooming in and out might be incorrect (Andre Klapper)
+
+New and updated translations:
+
+- Gil Forcada [ca]
 - Baurzhan Muftakhidinov [kk]
 - Piotr Drąg [pl]
+- Daniel Șerbănescu [ro]
+- Yuri Chornoivan [uk]
+- Boyuan Yang [zh_CN]
+- Cheng-Chia Tseng [zh_TW]
+
+New and updated manual translations
+
+- Yuri Chornoivan [uk]
+
+Version 3.37.1
+--------------
+
+Bug fixes:
+
+ !48, Change "Back space" to "Backspace" (scootergrisen)
+ !49, Change "Slide show" to "Slideshow" (scootergrisen)
+ !56, Fix minor typos (Yuri Chornoivan)
+ #115, "Use the keyboard keys" could explain which ones (Ali Hassan-Zahraee)
+
+New and updated translations:
+
+- Charles Monzat [fr]
+
+New and updated manual translations
+
+- Yuri Chornoivan [uk]
 
 Version 3.36.2
 --------------
 
 Bug fixes:
+
  !50, help-overlay: Fix next/previous image shortcuts for RTL languages
  !51, appdata: Update to release 3.36.1 (Felipe Borges)
  !55, eog-application.c: Add new shortcut for zoom-normal action (Sabri Ünal)
