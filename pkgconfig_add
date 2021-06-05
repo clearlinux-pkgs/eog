@@ -4,3 +4,7 @@ gtk+-3.0
 gnome-desktop-3.0
 shared-mime-info
 libpeas-1.0
+librsvg-2.0
+libportal
+lcms2
+exempi-2.0
