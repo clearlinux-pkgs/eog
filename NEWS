@@ -1,8 +1,32 @@
-Version 40.3
+Version 41.0
 ------------
+
+New and updated manual translations
+
+- Tim Sabsch [de]
+- Rodrigo Lledó, Daniel Mustieles [es]
+- Asier Sarasua Garmendia [eu]
+- Balázs Úr [hu]
+- Seong-ho Cho [ko]
+- Piotr Drąg [pl]
+
+Version 41.rc
+-------------
+
+New and updated manual translations
+
+- Marek Černocký [cs]
+- Andika Triwidada [id]
+- Seong-ho Cho [ko]
+- Anders Jonsson [sv]
+
+Version 41.beta
+---------------
 
 Bug fixes:
 
+ !97,  Help: Make App icon a bit larger (Sabri Ünal)
+ !102, Fix deprecated functions (Krifa75)
  !106, EogImage: Do not crash if content type or filesize cannot be
        detected (Felix Riemann)
 
@@ -15,6 +39,7 @@ New and updated translations:
 New and updated manual translations
 
 - Alexey Rubtsov [ru]
+- Yuri Chornoivan [uk]
 
 Version 40.2
 ------------
