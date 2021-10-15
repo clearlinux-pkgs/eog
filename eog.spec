@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 41.0
-Release  : 48
+Release  : 49
 URL      : https://download.gnome.org/sources/eog/41/eog-41.0.tar.xz
 Source0  : https://download.gnome.org/sources/eog/41/eog-41.0.tar.xz
 Summary  : The GNOME Image Viewer
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : CC-BY-SA-3.0 GPL-2.0
 Requires: eog-bin = %{version}-%{release}
 Requires: eog-data = %{version}-%{release}
+Requires: eog-filemap = %{version}-%{release}
 Requires: eog-lib = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
 Requires: eog-locales = %{version}-%{release}
@@ -40,6 +41,7 @@ Summary: bin components for the eog package.
 Group: Binaries
 Requires: eog-data = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
+Requires: eog-filemap = %{version}-%{release}
 
 %description bin
 bin components for the eog package.
@@ -74,11 +76,20 @@ Group: Documentation
 doc components for the eog package.
 
 
+%package filemap
+Summary: filemap components for the eog package.
+Group: Default
+
+%description filemap
+filemap components for the eog package.
+
+
 %package lib
 Summary: lib components for the eog package.
 Group: Libraries
 Requires: eog-data = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
+Requires: eog-filemap = %{version}-%{release}
 
 %description lib
 lib components for the eog package.
@@ -103,13 +114,16 @@ locales components for the eog package.
 %prep
 %setup -q -n eog-41.0
 cd %{_builddir}/eog-41.0
+pushd ..
+cp -a eog-41.0 buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1632421984
+export SOURCE_DATE_EPOCH=1634312441
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -120,13 +134,17 @@ export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
+CFLAGS="$CFLAGS -m64 -march=x86-64-v3 -O3" CXXFLAGS="$CXXFLAGS -m64 -march=x86-64-v3 " LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddiravx2
+ninja -v -C builddiravx2
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/eog
 cp %{_builddir}/eog-41.0/COPYING %{buildroot}/usr/share/package-licenses/eog/4cc77b90af91e615a64ae04893fdffa7939db84c
 cp %{_builddir}/eog-41.0/help/C/license.page %{buildroot}/usr/share/package-licenses/eog/99449fd3e6417f1f32dbe2a5b252880badb25704
+DESTDIR=%{buildroot}-v3 ninja -C builddiravx2 install
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang eog
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
@@ -138,6 +156,7 @@ DESTDIR=%{buildroot} ninja -C builddir install
 %files bin
 %defattr(-,root,root,-)
 /usr/bin/eog
+/usr/share/clear/optimized-elf/bin*
 
 %files data
 %defattr(-,root,root,-)
@@ -1446,12 +1465,17 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/help/zh_TW/eog/view.page
 /usr/share/help/zh_TW/eog/zoom.page
 
+%files filemap
+%defattr(-,root,root,-)
+/usr/share/clear/filemap/filemap-eog
+
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/eog/libeog.so
 /usr/lib64/eog/plugins/libfullscreen.so
 /usr/lib64/eog/plugins/libreload.so
 /usr/lib64/eog/plugins/libstatusbar-date.so
+/usr/share/clear/optimized-elf/lib*
 
 %files license
 %defattr(0644,root,root,0755)
