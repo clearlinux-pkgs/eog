@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 41.1
-Release  : 53
+Release  : 54
 URL      : https://download.gnome.org/sources/eog/41/eog-41.1.tar.xz
 Source0  : https://download.gnome.org/sources/eog/41/eog-41.1.tar.xz
 Summary  : The GNOME Image Viewer
