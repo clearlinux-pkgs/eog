@@ -1,3 +1,120 @@
+Version 42.0
+------------
+
+Bug fixes and improvements:
+
+ !124, appdata: Update screenshot (Sophie Herold)
+ !129, Fix discovery of Evince for multi-page images (Krifa75)
+ !130, EogWindow: Also set wallpaper as dark wallpaper (Felix Riemann)
+
+New and updated translations:
+
+- Alexander Shopov [bg]
+- Ask Hjorth Larsen [da]
+- Charles Monzat [fr]
+- Balázs Úr [hu]
+- sicklylife [ja]
+- Baurzhan Muftakhidinov [kk]
+- Jeeyong Um [ko]
+- Kjartan Maraas [nb]
+- Quentin PAGÈS [oc]
+- Piotr Drąg [pl]
+- Марко М. Костић [sr]
+- lumingzh [zh_CN]
+
+New and updated manual translations
+
+- Miquel-Àngel Burgos i Fradeja, Jordi Mas [ca]
+
+Version 42.rc
+-------------
+
+Bug fixes:
+
+ !122, Replace gtk_window_set_title with hdy_header_bar_set_title (Krifa75)
+ !126, Disable Presenter action if no images are loaded (Krifa75)
+
+New and updated translations:
+
+- maite guix [ca]
+- Tim Sabsch, Philipp Kiemle [de]
+- Daniel Mustieles García [es]
+- Asier Sarasua Garmendia [eu]
+- Danial Behzadi [fa]
+- Jiri Grönroos [fi]
+- Yosef Or Boczko [he]
+- Goran Vidović [hr]
+- Kukuh Syafaat [id]
+- Aurimas Černius [lt]
+- Hugo Carvalho [pt]
+- Matheus Barbosa [pt_BR]
+- Aleksandr Melman [ru]
+- Dušan Kazik [sk]
+- Matej Urbančič [sl]
+- Luna Jernberg, Anders Jonsson [sv]
+- Emin Tufan Çetin [tr]
+
+New and updated manual translations
+
+- Hugo Carvalho [pt]
+
+Version 42.beta
+---------------
+
+Bug fixes and features:
+
+ !76,  Use gtk_widget_queue_draw to display thumbnails faster (Krifa75)
+ !105, Replace properties dialog (Peter Eisenmann)
+ !118, Shortcuts: Update keyboard shortcuts (Jeremias Ortega)
+ !119, eog-window: use correct type for display_profile (Zander Brown)
+ !120, doc: migrate to gi-docgen (Iñigo Martínez)
+ !121, Use libhandy for dark style preference and
+       rounded window corners  (Christopher Davis)
+
+New and updated translations:
+
+- maite guix [ca]
+- Marek Černocký [cs]
+- Fran Dieguez [gl]
+- Quentin PAGÈS [oc]
+- Leônidas Araújo [pt_BR]
+- Matej Urbančič [sl]
+- Yuri Chornoivan [uk]
+
+New and updated manual translations
+
+- Jordi Mas [ca]
+- Alan Mortensen [da]
+- Henrique Roberto Gattermann Mittelstaedt [pt_BR]
+
+
+Version 42.alpha
+----------------
+
+Bug fixes:
+
+ !108, metainfo: Align app name with .desktop name (Sophie Herold)
+ !111, build: Set of improvements for meson (Iñigo Martínez)
+ !114, EogScrollView: Use overlay scrollbars (Jeremias Ortega)
+ !115, Update libportal usage (Patrick Griffis)
+ !116, make zoom entry more visually stable (Lukas K.)
+ !117, eog-image: fix double-free of eog image status mutex (Antoine Jacoutot)
+
+New and updated translations:
+
+- Daniel Mustieles [es]
+- Asier Sarasua Garmendia [eu]
+- Fabio Tomat [fur]
+- Yosef Or Boczko [he]
+- Meskó Balázs [hu]
+- Kukuh Syafaat [id]
+- Sveinn í Felli [is]
+- Quentin PAGÈS [oc]
+- Hugo Carvalho [pt]
+- Alexey Rubtsov [ru]
+- Yuri Chornoivan [uk]
+- lumingzh [zh_CN]
+
 Version 41.1
 ------------
 

@@ -1,0 +1,4 @@
+42.0
+gsettings-desktop-schemas
+libportal-dev
+pkgconfig(libhandy-1)
