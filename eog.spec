@@ -4,7 +4,7 @@
 #
 Name     : eog
 Version  : 42.2
-Release  : 58
+Release  : 59
 URL      : https://download.gnome.org/sources/eog/42/eog-42.2.tar.xz
 Source0  : https://download.gnome.org/sources/eog/42/eog-42.2.tar.xz
 Summary  : No detailed summary available
@@ -124,7 +124,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656022422
+export SOURCE_DATE_EPOCH=1656104652
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -1515,10 +1515,6 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/lib64/eog/plugins/libfullscreen.so
 /usr/lib64/eog/plugins/libreload.so
 /usr/lib64/eog/plugins/libstatusbar-date.so
-/usr/lib64/glibc-hwcaps/x86-64-v3/libeog.so
-/usr/lib64/glibc-hwcaps/x86-64-v3/libfullscreen.so
-/usr/lib64/glibc-hwcaps/x86-64-v3/libreload.so
-/usr/lib64/glibc-hwcaps/x86-64-v3/libstatusbar-date.so
 
 %files license
 %defattr(0644,root,root,0755)
