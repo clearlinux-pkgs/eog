@@ -1,3 +1,75 @@
+Version 44.0
+------------
+
+Bug fixes and improvements:
+
+ * help: Switch mailing list URLs over to GNOME Discourse (Andre Klapper)
+
+New and updated translations:
+
+- Alexander Shopov [bg]
+- Marek Černocký [cs]
+- Ask Hjorth Larsen [da]
+- Efstathios Iosifidis [el]
+- Daniel Mustieles [es]
+- Asier Sarasua Garmendia [eu]
+- MohammadSaleh Kamyab [fa]
+- Jiri Grönroos [fi]
+- Irénée Thirion [fr]
+- Balázs Úr [hu]
+- Jeeyong Um [ko]
+- Aurimas Černius [lt]
+- Piotr Drąg [pl]
+- Марко М. Костић [sr]
+- Sabri Ünal [tr]
+
+New and updated manual translations
+
+- Alan Mortensen [da]
+- Tim Sabsch [de]
+- Irénée Thirion [fr]
+- Balázs Úr [hu]
+- Seong-ho Cho [ko]
+- Piotr Drąg, Aviary.pl [pl]
+- Ser82-png [ru]
+- Anders Jonsson [sv]
+- Sabri Ünal [tr]
+- Yuri Chornoivan [uk]
+
+Version 44.beta
+----------------
+
+Bug fixes and improvements:
+
+ !148, Remove all codes inside #if 0 (Krifa75)
+
+New and updated translations:
+
+- Yuras Shumovich [be]
+- Jürgen Benvenuti [de]
+- Fabio Tomat [fur]
+- Fran Diéguez [gl]
+- Yosef Or Boczko [he]
+- Kukuh Syafaat [id]
+- Ekaterine Papava [ka]
+- Quentin PAGÈS [oc]
+- Hugo Carvalho [pt]
+- Aleksandr Melman [ru]
+- Dušan Kazik [sk]
+- Martin Srebotnjak [sl]
+- Anders Jonsson [sv]
+- Sabri Ünal [tr]
+- Yuri Chornoivan [uk]
+
+Version 44.alpha
+----------------
+
+Bug fixes and improvements:
+
+ !144, application: Add preferences shortcut (Sabri Ünal)
+ !144, help-overlay: Use action-name properties (Sabri Ünal)
+ !146, Drop eog_util_make_valid_utf8 (Krifa75)
+
 Version 43.2
 ------------
 
