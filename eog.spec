@@ -5,7 +5,7 @@
 #
 Name     : eog
 Version  : 44.0
-Release  : 84
+Release  : 85
 URL      : https://download.gnome.org/sources/eog/44/eog-44.0.tar.xz
 Source0  : https://download.gnome.org/sources/eog/44/eog-44.0.tar.xz
 Summary  : No detailed summary available
