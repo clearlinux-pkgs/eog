@@ -5,7 +5,7 @@
 #
 Name     : eog
 Version  : 44.1
-Release  : 86
+Release  : 87
 URL      : https://download.gnome.org/sources/eog/44/eog-44.1.tar.xz
 Source0  : https://download.gnome.org/sources/eog/44/eog-44.1.tar.xz
 Summary  : No detailed summary available
@@ -13,7 +13,6 @@ Group    : Development/Tools
 License  : CC-BY-SA-3.0 GPL-2.0
 Requires: eog-bin = %{version}-%{release}
 Requires: eog-data = %{version}-%{release}
-Requires: eog-filemap = %{version}-%{release}
 Requires: eog-lib = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
 Requires: eog-locales = %{version}-%{release}
@@ -46,7 +45,6 @@ Summary: bin components for the eog package.
 Group: Binaries
 Requires: eog-data = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
-Requires: eog-filemap = %{version}-%{release}
 
 %description bin
 bin components for the eog package.
@@ -81,20 +79,11 @@ Group: Documentation
 doc components for the eog package.
 
 
-%package filemap
-Summary: filemap components for the eog package.
-Group: Default
-
-%description filemap
-filemap components for the eog package.
-
-
 %package lib
 Summary: lib components for the eog package.
 Group: Libraries
 Requires: eog-data = %{version}-%{release}
 Requires: eog-license = %{version}-%{release}
-Requires: eog-filemap = %{version}-%{release}
 
 %description lib
 lib components for the eog package.
@@ -128,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682358080
+export SOURCE_DATE_EPOCH=1682961571
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -160,8 +149,8 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files bin
 %defattr(-,root,root,-)
+/V3/usr/bin/eog
 /usr/bin/eog
-/usr/share/clear/optimized-elf/bin*
 
 %files data
 %defattr(-,root,root,-)
@@ -1547,17 +1536,16 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/help/zh_TW/eog/view.page
 /usr/share/help/zh_TW/eog/zoom.page
 
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-eog
-
 %files lib
 %defattr(-,root,root,-)
+/V3/usr/lib64/eog/libeog.so
+/V3/usr/lib64/eog/plugins/libfullscreen.so
+/V3/usr/lib64/eog/plugins/libreload.so
+/V3/usr/lib64/eog/plugins/libstatusbar-date.so
 /usr/lib64/eog/libeog.so
 /usr/lib64/eog/plugins/libfullscreen.so
 /usr/lib64/eog/plugins/libreload.so
 /usr/lib64/eog/plugins/libstatusbar-date.so
-/usr/share/clear/optimized-elf/other*
 
 %files license
 %defattr(0644,root,root,0755)
