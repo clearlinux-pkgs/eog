@@ -4,10 +4,10 @@
 # Using build pattern: meson
 #
 Name     : eog
-Version  : 44.2
-Release  : 91
-URL      : https://download.gnome.org/sources/eog/44/eog-44.2.tar.xz
-Source0  : https://download.gnome.org/sources/eog/44/eog-44.2.tar.xz
+Version  : 44.3
+Release  : 92
+URL      : https://download.gnome.org/sources/eog/44/eog-44.3.tar.xz
+Source0  : https://download.gnome.org/sources/eog/44/eog-44.3.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC-BY-SA-3.0 GPL-2.0
@@ -106,10 +106,10 @@ locales components for the eog package.
 
 
 %prep
-%setup -q -n eog-44.2
-cd %{_builddir}/eog-44.2
+%setup -q -n eog-44.3
+cd %{_builddir}/eog-44.3
 pushd ..
-cp -a eog-44.2 buildavx2
+cp -a eog-44.3 buildavx2
 popd
 
 %build
@@ -117,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685499674
+export SOURCE_DATE_EPOCH=1688407333
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
