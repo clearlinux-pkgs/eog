@@ -1,3 +1,66 @@
+Version 45.0
+------------
+
+Bug fixes and improvements:
+
+ * help: Replace dead IRC links (Andre Klapper)
+
+New and updated translations:
+
+- Yuras Shumovich [be]
+- Nathan Follens [nl]
+
+New and updated manual translations
+
+- Piotr Drąg [pl]
+- Anders Jonsson [sv]
+- Yuri Chornoivan [uk]
+
+Version 45.rc
+-------------
+
+New and updated translations:
+
+- maite guix [ca]
+- Daniel Rusek [cs]
+- Asier Sarasua Garmendia [eu]
+- Fran Diéguez [gl]
+- Kukuh Syafaat [id]
+- Baurzhan Muftakhidinov [kk]
+- Piotr Drąg [pl]
+- Anders Jonsson [sv]
+- Sabri Ünal [tr]
+- Nanling [zh_CN]
+
+New and updated manual translations
+
+- Piotr Drąg [pl]
+- Anders Jonsson [sv]
+- Sabri Ünal [tr]
+
+Version 45.alpha
+----------------
+
+Bug fixes and improvements:
+
+ !157, Rename Image Viewer -> Eye of GNOME (Michael Catanzaro)
+
+New and updated translations:
+
+- Danial Behzadi [fa]
+- Yosef Or Boczko [he]
+- Balázs Úr [hu]
+- Ekaterine Papava [ka]
+- Hugo Carvalho [pt]
+- Ser82-png [ru]
+- Yuri Chornoivan [uk]
+
+New and updated manual translations
+
+- Balázs Úr [hu]
+- Ser82-png [ru]
+- Yuri Chornoivan [uk]
+
 Version 44.3
 ------------
 
