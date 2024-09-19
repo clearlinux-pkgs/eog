@@ -1,3 +1,25 @@
+Version 47.0
+------------
+
+Bug fixes and improvements:
+
+ !166, Fix icon name (Balló György)
+
+New and updated translations:
+
+- Jhonata Fernandes [pt_BR]
+
+Version 47.beta
+---------------
+
+Bug fixes and improvements:
+
+ !163, desktop: Add jpeg-xl to MimeType list (Jeremy Bícha)
+ !164, EogWindow: Raise priority of image loading and transformation jobs
+       (Felix Riemann)
+ !165, EogMetadataDetails: Support copying metadata values to
+       the clipboard (Felix Riemann)
+
 Version 45.4
 ------------
 
