@@ -7,7 +7,7 @@
 #
 Name     : eog
 Version  : 47.0
-Release  : 106
+Release  : 107
 URL      : https://download.gnome.org/sources/eog/47/eog-47.0.tar.xz
 Source0  : https://download.gnome.org/sources/eog/47/eog-47.0.tar.xz
 Summary  : No detailed summary available
